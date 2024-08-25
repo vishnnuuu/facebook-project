@@ -1,0 +1,119 @@
+.header {
+  background-color: #3b5998;
+  width: 100%;
+  height: 80px;
+}
+body {
+  margin: 0%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.logo {
+  width: 50%;
+  padding: 20px;
+  float: left;
+}
+.login {
+  float: left;
+  padding-top: 9px;
+  padding-left: 15px;
+}
+.logo-text {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.login-label {
+  color: white;
+  font-size: 11px;
+}
+.forgotten {
+  color: #0866ff;
+  font-size: 14px;
+  font-weight: 50;
+  text-decoration: none;
+}
+.submit-button {
+  background-color: #3b5998;
+  color: #f4eded;
+  border-color: #0651e8;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: rgb(28, 25, 125);
+}
+.left-section {
+  width: 50%;
+  float: left;
+  padding-left: 134px;
+  padding-top: 52px;
+}
+.right-section {
+  width: 39%;
+  float: left;
+}
+
+.main-body {
+  background: linear-gradient(white, #d3d8e8);
+  width: 100%;
+  height: 100%;
+}
+.image {
+  width: 581px;
+}
+.para { 
+  font-weight: bold;
+  font-size: 21px;
+}
+.head {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+}
+.pera {
+  color: rgb(0, 0, 0);
+}
+
+.mo {
+  margin-top: 15px;
+  padding: 8px;
+  width: 332px;
+}
+
+.lab {
+  margin-top: 2px;
+  color: #606770;
+}
+.dob {
+  color: #606770;
+
+  margin-top: 15px;
+}
+.date {
+  margin-top: 5px;
+}
+.gen {
+  margin-top: 5px;
+  color: #606770;
+}
+.option {
+  margin-top: 5px;
+  color: #606770;
+}
+.sing {
+  margin-top: 15px;
+  color: #606770;
+  background: #42b72a;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 30px;
+  font-size: larger;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+.sing:hover{
+  background: rgb(49, 143, 44);
+}
