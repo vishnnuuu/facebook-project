@@ -13,15 +13,19 @@
           <a class="logo-text" href="index.html">facebook</a>
         </div>
         <div class="login">
-          <form actions="">
+          <form action="">
             <table class="login-controls">
               <tr>
-                <td><label class="login-label">Email or Mobile</label></td>
-                <td><label class="login-label">Password</label></td>
+                <td>
+                  <label class="login-label" for="email">Email or Mobile</label>
+                </td>
+                <td>
+                  <label class="login-label" for="password">Password</label>
+                </td>
               </tr>
               <tr>
-                <td><input type="text" /></td>
-                <td><input type="text" /></td>
+                <td><input type="text" id="email" /></td>
+                <td><input type="password" id="password" /></td>
                 <td>
                   <input class="submit-button" type="submit" value="Login" />
                 </td>
@@ -44,38 +48,68 @@
             Facebook helps you connect and share with the <br />
             people in your life.
           </p>
-          <img class="image" src="map.png" alt="" />
+          <img class="image" src="map.png" alt="Map" />
         </div>
         <div class="right-section">
           <h1 class="head">Create new account</h1>
           <p class="pera">It's quick and easy.</p>
-          <form action="https://www.facebook.com/search" method="ge">
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Surname" />
-            <br />
+          <form
+            class="signup-form"
+            action="https://www.facebook.com/search"
+            id="signup-form"
+          >
+            <div class="signup-field" name>
+              <input
+                name="fname"
+                class="field"
+                type="text"
+                placeholder="Firstname"
+                required
+              />
+              <input
+                name="sname"
+                class="field"
+                type="text"
+                placeholder="Surname"
+                required
+              />
+            </div>
             <input
+              name="emailAddress"
               class="mo"
-              type="text"
+              type="email"
               placeholder="Mobile number or email address"
+              required
             />
             <br />
-            <input class="mo" type="text" placeholder="New Password" />
+            <input
+              name="password"
+              class="mo"
+              type="password"
+              placeholder="New password"
+              required
+            />
             <br />
-            <p class="dob">Date of birth </p><br>
-            <input class="date" type="date" placeholder="Surname" /><br>
-            <p class="gen" >Gender</p><br>
-            <input class="option" type="radio">
-            <label >Male</label>
-            <input type="radio">
-            <label>Female</label>
-            <input type="radio">
-            <label >other</label><br>
-            <input class="sing" type="submit" value="Sing up">
-
-           
+            <p class="dob">Date of birth</p>
+            <input class="date" type="date" required /><br />
+            <p class="gen">Gender</p>
+            <input name="gender" type="radio" value="male" id="male" required />
+            <label for="male">Male</label>
+            <input name="gender" type="radio" value="female" id="female" />
+            <label for="female">Female</label>
+            <input name="gender" type="radio" value="other" id="other" />
+            <label for="other">Other</label><br />
+            <input class="sing" type="submit" value="Sign up" />
           </form>
         </div>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
